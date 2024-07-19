@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <img src="assets/bg.jpg" alt="" id="bg">
+        <h2 id="text">Mountains</h2>
+        <img src="assets/man.png" alt="" id="man">
+        <img src="assets/clouds_1.png" alt="" id="clouds_1">
+        <img src="assets/clouds_2.png" alt="" id="clouds_2">
+        <img src="assets/mountain_left.png" alt="" id="mountain_left">
+        <img src="assets/mountain_right.png" alt="" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Title - Lorem ipsum.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quas voluptatibus labore cum minima quo tempora accusantium, minus blanditiis esse consectetur itaque voluptatum aspernatur et veniam nostrum doloremque totam quis necessitatibus recusandae architecto quia, atque impedit! Culpa reprehenderit excepturi, voluptatum distinctio amet ducimus accusantium itaque iusto magnam dolorem magni ipsam exercitationem delectus quia aliquid libero non placeat voluptate cumque deserunt unde eligendi commodi. Blanditiis perferendis non placeat. Ducimus vitae voluptatem saepe? Sunt harum consequatur dignissimos maiores repellendus odit unde ad similique eaque tenetur aspernatur inventore recusandae officiis quam asperiores, laudantium facilis odio aliquid quasi velit commodi itaque accusantium excepturi provident. Quam libero corporis sequi sint dignissimos modi exercitationem ipsum hic adipisci ea facilis, magni debitis rerum magnam sapiente fugiat quod neque amet dolore aperiam suscipit pariatur explicabo nam in! Commodi nihil odio voluptatum officiis minima. Sint quaerat at sed reprehenderit, aliquid accusantium fuga! Harum quod minus molestiae distinctio. Ipsa facilis et optio, temporibus veniam consequatur soluta, nulla dolorum veritatis, ullam aut cupiditate voluptate. Ullam dolore iste, commodi consectetur velit, corporis consequatur quos dolores veniam nam, numquam temporibus nemo! Commodi optio repellat ipsam fuga quis nostrum voluptatem corrupti magni pariatur? Facere eaque eos dolores. Placeat cupiditate in facere natus repellendus rem nulla cum dolores quasi ullam nam facilis quibusdam tempora, est saepe quisquam dolorum corrupti ab illum. Corporis, dolorum suscipit assumenda sit odit numquam expedita ex tenetur aspernatur facilis unde ducimus corrupti quidem cum dolores voluptas molestias architecto deleniti error et voluptates esse, quasi vel. Ipsum eius amet vero dicta necessitatibus doloremque voluptas architecto, iure voluptate doloribus maxime placeat atque, consequatur, suscipit ut quae repellendus sunt eaque provident aliquid. Et perspiciatis aliquid dolorum sapiente eum. Impedit pariatur expedita necessitatibus doloribus molestias rerum animi quasi aut, quia fuga cupiditate. <br><br> Dicta deleniti sequi, fuga officiis facilis modi! Voluptatum itaque hic iste tempore sint?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quas voluptatibus labore cum minima quo tempora accusantium, minus blanditiis esse consectetur itaque voluptatum aspernatur et veniam nostrum doloremque totam quis necessitatibus recusandae architecto quia, atque impedit! Culpa reprehenderit excepturi, voluptatum distinctio amet ducimus accusantium itaque iusto magnam dolorem magni ipsam exercitationem delectus quia aliquid libero non placeat voluptate cumque deserunt unde eligendi commodi. Blanditiis perferendis non placeat. Ducimus vitae voluptatem saepe? Sunt harum consequatur dignissimos maiores repellendus odit unde ad similique eaque tenetur aspernatur inventore recusandae officiis quam asperiores, laudantium facilis odio aliquid quasi velit commodi itaque accusantium excepturi provident. Quam libero corporis sequi sint dignissimos modi exercitationem ipsum hic adipisci ea facilis, magni debitis rerum magnam sapiente fugiat quod neque amet dolore aperiam suscipit pariatur explicabo nam in! Commodi nihil odio voluptatum officiis minima. Sint quaerat at sed reprehenderit, aliquid accusantium fuga! Harum quod minus molestiae distinctio. Ipsa facilis et optio, temporibus veniam consequatur soluta, nulla dolorum veritatis, ullam aut cupiditate voluptate. Ullam dolore iste, commodi consectetur velit, corporis consequatur quos dolores veniam nam, numquam temporibus nemo! Commodi optio repellat ipsam fuga quis nostrum voluptatem corrupti magni pariatur? Facere eaque eos dolores. Placeat cupiditate in facere natus repellendus rem nulla cum dolores quasi ullam nam facilis quibusdam tempora, est saepe quisquam dolorum corrupti ab illum. Corporis, dolorum suscipit assumenda sit odit numquam expedita ex tenetur aspernatur facilis unde ducimus corrupti quidem cum dolores voluptas molestias architecto deleniti error et voluptates esse, quasi vel. Ipsum eius amet vero dicta necessitatibus doloremque voluptas architecto, iure voluptate doloribus maxime placeat atque, consequatur, suscipit ut quae repellendus sunt eaque provident aliquid. Et perspiciatis aliquid dolorum sapiente eum. Impedit pariatur expedita necessitatibus doloribus molestias rerum animi quasi aut, quia fuga cupiditate. Dicta deleniti sequi, fuga officiis facilis modi! Voluptatum itaque hic iste tempore sint?</p>
+    </div>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+
+        gsap.to("#bg", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 1.5
+        })
+
+        gsap.to("#man", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            scale : 0.5
+        })
+
+        gsap.to("#mountain_left", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -500,
+        })
+
+        gsap.to("#mountain_right", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 500,
+        })
+
+        gsap.to("#clouds_1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : 200,
+        })
+
+        gsap.to("#clouds_2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -200,
+        })
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 300,
+        })
+
+    </script>
+</html>
